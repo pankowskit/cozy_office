@@ -1,10 +1,17 @@
-import {Container} from "react-bootstrap";
+import React,{Component} from "react";
+import Container from "../../node_modules/react-bootstrap/Container";
+import ConsultationS1 from "../components/consultation-s1";
+import ConsultationS2 from "../components/consultation-s2";
 
-function Consultation(){
-    return(
-        <Container fluid className="minh-footer-adj bg-dark d-flex align-items-center py-5">
-            
-        </Container>
-    );
+class Consultation extends Component{
+    render(){
+        return(        
+            <Container fluid className="minh-footer-adj p-0">
+                <ConsultationS1/>
+                <ConsultationS2/>
+            </Container>    
+        );
+    }
 }
+
 export default Consultation;
